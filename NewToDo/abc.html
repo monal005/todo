@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script>
+      let counter = 0;
+
+      function addChild(parentId) {
+        let parent = document.getElementById(parentId);
+        let childId = parentId + '-' + (counter++);
+
+        let child = document.createElement("li");
+        child.id = childId;
+
+        let input = document.createElement("input");
+        input.type = "text";
+        input.placeholder = "Enter child content";
+
+        let button = document.createElement("button");
+        button.innerHTML = "Add child";
+        button.onclick = function() {
+          addChild(childId);
+        };
+
+        child.appendChild(input);
+        child.appendChild(button);
+        parent.appendChild(child);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Dynamically Create a List with Children</h2>
+    <input type="text" id="root-input" placeholder="Enter root content" />
+    <button onclick="addChild('root')">Add child</button>
+    <ul id="root"></ul>
+  </body>
+</html>

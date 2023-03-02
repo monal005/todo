@@ -1,0 +1,74 @@
+
+.d1{
+    float: right;
+}
+
+#root{
+    width: 60%;
+    /* background-color: #8d8c8c38; */
+    backdrop-filter: blur(20px);
+    /* box-shadow: 2px 2px px 0px whitesmoke; */
+    margin-left: 140px;
+    padding: 5px;
+    
+}
+#add{
+    position: absolute;
+    left: 102%;
+    top: 0%;
+}
+
+#save{
+    position: absolute;
+    left: 113%;
+    top: 0%;
+}
+#main{
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 20px;
+}
+
+body{
+    background-image: url(./alexander-grey-NkQD-RHhbvY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -30%;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    /* display: flexbox; */
+    text-decoration: none;
+    list-style: none;
+     display: grid;
+    grid-template-columns: repeat(2,1fr)!important;
+    gap:10px;
+    /* justify-content: center; */
+    
+    /* text-align: center; */
+}
+
+li{
+ border: 2px solid  ;
+ border-radius: 10px;
+ display: grid;
+ grid-template-columns: repeat(2,1fr)!important;
+ /* height: auto; */
+ /* justify-content: center; */
+ padding: 10px;
+ margin: 10px;
+ width:auto;
+
+ /* flex-direction: column; */
+}
+
+li li{
+    border: 1px solid #251e1e;
+}
+li li li{
+    border-color: green;
+}

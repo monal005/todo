@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <a href="./index2.html">Click</a> -->
+        <h3 class="mx-5 mt-5 text-center">MY-TO-DO LIST</h3>
+    <br>
+
+    <div id="main">
+        <div id="root" class="rounded ">
+    
+            <form class="form1" class=" d-flex justify-content-center gap-4  mt-3 ">
+                <input type="text" placeholder="Enter text" class="form-control mt-2" id="input">
+                <button type="submit" class="btn btn-warning mt-2 btn-lg" value="add" id="add">Add</button>
+                
+            </form>
+            <button class="btn btn-primary btn-lg  mt-2" value="save" id="save" onclick="save()">Save</button>
+        <div id="outer"  >
+            <div id="ul" class="d-flex mt-3" >
+           <!-- <ul>
+
+           </ul>      -->
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- <div id="mydiv1">
+       hrllo
+    </div> -->
+    <script>
+
+        let a=document.querySelector(".mydiv1")
+        console.log(a);
+        console.log(document.querySelectorAll(".mydiv1")+"querySelectorAll")
+        console.log(document.getElementById("d1")+"ELementById")
+    </script>
+    <script src="main1.js"></script>
+    <!-- <script src="main2.js"></script> -->
+
+    <br>
+   
+    <script>
+        console.log("x and y down here")
+        let x = document.getElementsByClassName('ddd');
+        console.log(x);
+        let y = document.querySelectorAll("#ddd");
+        console.log(y[0]);
+    </script>
+</body>
+</html>
